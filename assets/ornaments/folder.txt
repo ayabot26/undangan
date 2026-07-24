@@ -1,0 +1,6 @@
+divider
+corners
+moon
+sakura
+patterns
+icons

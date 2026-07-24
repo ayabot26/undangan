@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
 
+<!-- =====================================================
+     00. HEAD
+    ===================================================== -->
 <head>
+
+    <!-- 00.01 Meta Tags -->
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Naruto & Hinata Wedding Invitation</title>
 
     <meta name="description"
           content="Wedding Invitation Naruto Uzumaki & Hinata Hyuga">
 
-    <!-- Google Font -->
+    <!-- 00.02 Google Fonts -->
 
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
@@ -21,8 +27,10 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+SC:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet">
+
+    <!-- 00.03 Main CSS -->
 
     <link rel="stylesheet"
           href="style.css">
@@ -31,184 +39,339 @@
 
 <body>
 
-<!-- ===================================== -->
-<!-- BACKGROUND MUSIC -->
-<!-- ===================================== -->
+<!-- =====================================================
+     01. BACKGROUND MUSIC
+===================================================== -->
 
-<audio id="bgMusic" loop>
+<audio id="bgMusic"
+       loop>
 
     <source src="assets/music/cover.mp3"
             type="audio/mpeg">
 
 </audio>
 
-<!-- ===================================== -->
-<!-- COVER -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     02. COVER
+===================================================== -->
 
 <section id="cover">
 
+    <!-- Background -->
+    <div class="cover-image"></div>
+
+    <!-- Overlay -->
     <div class="overlay"></div>
 
+    <!-- Content -->
     <div class="cover-content">
 
         <p class="subtitle">
-
             THE WEDDING OF
-
         </p>
 
-        <h1>Naruto</h1>
-
-        <span>&</span>
-
-        <h1>Hinata</h1>
-
-        <p>
-
-            21 Desember 2026
-
-        </p>
+        <h1 class="cover-title">
+            <span class="name">Naruto</span>
+            <span class="and">&</span>
+            <span class="name">Hinata</span>
+        </h1>
 
         <div class="guest-box">
-
             <p>Kepada Yth.</p>
 
             <h3 id="guestName">
-
-                Bapak / Ibu / Saudara/i
-
+                Bapak • Ibu • Saudara/i
             </h3>
-
         </div>
 
         <button id="openInvitation">
-
             💌 Buka Undangan
-
         </button>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- OPENING -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     03. OPENING
+===================================================== -->
 
 <section id="opening">
 
-    <div class="container">
+    <!-- 03.01 Overlay -->
 
-        <h2>Opening</h2>
+    <div class="opening-overlay"></div>
+
+    <!-- 03.02 Content -->
+
+    <div class="container opening-content">
+
+        <!-- 03.03 Moon Ornament -->
+
+        <img src="assets/images/bulan.png"
+             class="opening-moon"
+             alt="Moon">
+
+        <!-- 03.04 Subtitle -->
+
+        <p class="opening-subtitle">
+
+            THE WEDDING OF
+
+        </p>
+
+        <!-- 03.05 Divider -->
+
+        <div class="opening-divider"></div>
+
+        <!-- 03.06 Couple Name -->
+
+        <h2 class="opening-title">
+
+            <span class="name">Naruto</span>
+
+            <span class="and">&</span>
+
+            <span class="name">Hinata</span>
+
+        </h2>
+
+        <!-- 03.07 Description -->
+
+        <p class="opening-text">
+
+            Akan melangsungkan akad dan resepsi
+            pernikahan pada
+
+        </p>
+
+        <!-- 03.08 Wedding Date -->
+
+        <p class="opening-date">
+
+            Senin, 21 Desember 2026
+
+        </p>
+
+        <!-- 03.09 Countdown -->
+
+        <div class="countdown">
+
+            <div class="time-box">
+
+                <span id="days">0</span>
+
+                <small>Hari</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="hours">0</span>
+
+                <small>Jam</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="minutes">0</span>
+
+                <small>Menit</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="seconds">0</span>
+
+                <small>Detik</small>
+
+            </div>
+
+        </div>
+
+        <!-- 03.10 Scroll -->
+
+        <a href="#couple"
+           class="scroll-down">
+
+            ↓
+
+        </a>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- COUPLE -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     04. BRIDE & GROOM
+===================================================== -->
 
 <section id="couple">
 
     <div class="container">
 
-        <h2>Bride & Groom</h2>
+        <h2>
+
+            Bride & Groom
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- STORY -->
-<!-- ===================================== -->
+
+<!-- =====================================================
+     05. LOVE STORY
+===================================================== -->
 
 <section id="story">
 
     <div class="container">
 
-        <h2>Love Story</h2>
+        <h2>
+
+            Love Story
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- EVENT -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     06. WEDDING EVENT
+===================================================== -->
 
 <section id="event">
 
     <div class="container">
 
-        <h2>Wedding Event</h2>
+        <h2>
+
+            Wedding Event
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- GALLERY -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     07. GALLERY
+===================================================== -->
 
 <section id="gallery">
 
     <div class="container">
 
-        <h2>Gallery</h2>
+        <h2>
+
+            Gallery
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- GIFT -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     08. COUNTDOWN
+===================================================== -->
+
+<section id="countdown">
+
+    <div class="container">
+
+        <h2>
+
+            Countdown
+
+        </h2>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     09. WEDDING GIFT
+===================================================== -->
 
 <section id="gift">
 
     <div class="container">
 
-        <h2>Wedding Gift</h2>
+        <h2>
+
+            Wedding Gift
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- WISHES -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     10. WISHES
+===================================================== -->
 
 <section id="wishes">
 
     <div class="container">
 
-        <h2>Ucapan & Doa</h2>
+        <h2>
+
+            Ucapan & Doa
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- CLOSING -->
-<!-- ===================================== -->
+
+
+<!-- =====================================================
+     11. CLOSING
+===================================================== -->
 
 <section id="closing">
 
     <div class="container">
 
-        <h2>Terima Kasih</h2>
+        <h2>
+
+            Terima Kasih
+
+        </h2>
 
     </div>
 
 </section>
 
-<!-- ===================================== -->
-<!-- FOOTER -->
-<!-- ===================================== -->
 
-<footer>
+
+<!-- =====================================================
+     12. FOOTER
+===================================================== -->
+
+<footer id="footer">
 
     <p>
 
@@ -217,6 +380,12 @@
     </p>
 
 </footer>
+
+
+
+<!-- =====================================================
+     13. MAIN JAVASCRIPT
+===================================================== -->
 
 <script src="script.js"></script>
 

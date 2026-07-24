@@ -1,6 +1,10 @@
-/* =========================
-   RESET
-========================= */
+/* =====================================================
+   00. GLOBAL
+===================================================== */
+
+/* -----------------------------------------------------
+   00.01 Reset
+----------------------------------------------------- */
 
 * {
     margin: 0;
@@ -9,163 +13,36 @@
 }
 
 
+/* -----------------------------------------------------
+   00.02 Body
+----------------------------------------------------- */
+
 body {
+
     font-family: 'Poppins', sans-serif;
-    color: white;
-    background: #111;
-}
 
+    color: #ffffff;
 
-/* =========================
-   COVER
-========================= */
-
-#cover {
-
-    position: relative;
-
-    min-height: 100vh;
-
-    background-image: url("assets/images/cover.png");
-
-    background-size: cover;
-
-    background-position: center;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-    
-    transition: opacity 1s ease;
+    background: #111111;
 
 }
 
+/* -----------------------------------------------------
+   00.03 Default Section
+----------------------------------------------------- */
 
-/* =========================
-   OVERLAY
-========================= */
-
-.overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(0,0,0,0.45);
-
-}
-
-
-/* =========================
-   CONTENT
-========================= */
-
-.cover-content {
-
-    position: relative;
-
-    z-index: 2;
-
-    padding: 20px;
-
-}
-
-
-.subtitle {
-
-    letter-spacing: 5px;
-
-    font-size: 14px;
-
-}
-
-
-h1 {
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 70px;
-
-    font-weight: 600;
-
-}
-
-
-.cover-content span {
-
-    font-size: 35px;
-
-}
-
-
-.cover-content p {
-
-    margin-top: 15px;
-
-}
-
-
-/* =========================
-   GUEST
-========================= */
-
-.guest-box {
-
-    margin-top: 30px;
-
-}
-
-
-#guestName {
-
-    font-size: 20px;
-
-}
-
-
-/* =========================
-   BUTTON
-========================= */
-
-#openInvitation {
-
-    margin-top: 35px;
-
-    padding: 14px 35px;
-
-    border-radius: 30px;
-
-    border: none;
-
-    cursor: pointer;
-
-    background: #c8a45d;
-
-    color:white;
-
-    font-size:16px;
-
-}
-
-
-/* =========================
-   SECTION
-========================= */
-
-section:not(#cover){
+section:not(#cover) {
 
     min-height:100vh;
 
     padding:80px 20px;
 
-    background:#111;
-
 }
 
+
+/* -----------------------------------------------------
+   00.04 Container
+----------------------------------------------------- */
 
 .container {
 
@@ -173,13 +50,639 @@ section:not(#cover){
 
 }
 
+/* -----------------------------------------------------
+   00.05 Footer
+----------------------------------------------------- */
 
 footer {
 
-    padding:30px;
+    padding: 30px;
 
-    text-align:center;
+    text-align: center;
 
-    background:#000;
+    background: #000000;
+
+}
+
+/* =====================================================
+   01. COVER
+===================================================== */
+
+/* -----------------------------------------------------
+   01.01 Section
+----------------------------------------------------- */
+
+#cover {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:center;
+
+    padding-bottom:90px;
+
+    text-align: center;
+    
+}
+
+.cover-image{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:0;
+
+    background:#111 url("assets/images/cover.png")
+               center center / cover no-repeat;
+
+}
+
+/* -----------------------------------------------------
+   01.02 Overlay
+----------------------------------------------------- */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,0,0,.08),
+            rgba(0,0,0,.35) 55%,
+            rgba(0,0,0,.78) 100%
+        ),
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.55)
+        );
+
+}
+
+
+/* -----------------------------------------------------
+   01.03 Cover Content
+----------------------------------------------------- */
+
+.cover-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 520px;
+
+    padding: 32px 24px;
+
+    overflow:hidden;
+
+}
+
+
+/* -----------------------------------------------------
+   01.04 Cover Subtitle
+----------------------------------------------------- */
+
+.subtitle {
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#ffffff;
+
+    margin-bottom:28px;
+
+    text-shadow:
+
+        0 2px 8px rgba(0,0,0,.35);
+
+}
+
+
+/* -----------------------------------------------------
+   01.05 Cover Title
+----------------------------------------------------- */
+
+.cover-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0 0 48px;
+
+    line-height:1.1;
+
+}
+
+.cover-title .name {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 90px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #fff;
+
+    text-shadow:0 5px 18px rgba(0,0,0,.45);
+
+    filter:  drop-shadow(0 5px 10px rgba(0,0,0,.20));
+
+}
+
+.cover-title .and {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    opacity: .9;
+
+    line-height: 1;
+
+}
+
+
+/* -----------------------------------------------------
+   01.06 Guest Box
+----------------------------------------------------- */
+
+.guest-box {
+
+    margin-top: 36px;
+
+    font-family: 'Cormorant SC', serif;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.30);
+
+}
+
+
+#guestName {
+
+    font-family: 'Cormorant SC', serif;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-top: 10px;
+
+}
+
+
+/* -----------------------------------------------------
+   01.07 Open Invitation Button
+----------------------------------------------------- */
+
+#openInvitation{
+
+    margin-top:36px;
+
+    padding:16px 38px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    background:#c8a45d;
+
+    color:#fff;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.28);
+
+}
+
+
+/* =====================================================
+   02. OPENING
+===================================================== */
+
+/* -----------------------------------------------------
+   02.01 Opening Section
+----------------------------------------------------- */
+
+#opening {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.65)
+        ),
+        url("assets/images/opening.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+/* -----------------------------------------------------
+   02.02 Overlay
+----------------------------------------------------- */
+
+.opening-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.55)
+        );
+
+}
+
+/* -----------------------------------------------------
+   02.03 Opening Content
+----------------------------------------------------- */
+
+.opening-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:520px;
+
+    padding:40px 24px;
+
+}
+
+/* -----------------------------------------------------
+   02.04 Moon Ornament
+----------------------------------------------------- */
+
+.opening-moon{
+
+    width:70px;
+
+    margin-bottom:22px;
+
+}
+
+/* -----------------------------------------------------
+   02.05 Subtitle
+----------------------------------------------------- */
+
+.opening-subtitle{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+}
+
+/* -----------------------------------------------------
+   02.06 Divider
+----------------------------------------------------- */
+
+.opening-divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:#ffffff;
+
+    margin:20px auto 30px;
+
+}
+
+/* -----------------------------------------------------
+   02.07 Couple Name
+----------------------------------------------------- */
+
+.opening-title{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-bottom:35px;
+
+}
+
+.opening-title .name{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:72px;
+
+    font-weight:400;
+
+    line-height:1;
+
+    color:#fff;
+
+    text-shadow:0 4px 15px rgba(0,0,0,.35);
+
+}
+
+.opening-title .and{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:34px;
+
+    line-height:1;
+
+}
+
+/* -----------------------------------------------------
+   02.08 Description
+----------------------------------------------------- */
+
+.opening-text{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+/* -----------------------------------------------------
+   02.09 Wedding Date
+----------------------------------------------------- */
+
+.opening-date{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+}
+
+/* -----------------------------------------------------
+   02.10 Countdown
+----------------------------------------------------- */
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:50px;
+
+}
+
+.time-box{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background:#b32025;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
+}
+
+.time-box span{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.time-box small{
+
+    font-size:11px;
+
+    margin-top:4px;
+
+}
+
+/* -----------------------------------------------------
+   02.11 Scroll Down
+----------------------------------------------------- */
+
+.scroll-down{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* =====================================================
+   99. RESPONSIVE
+===================================================== */
+
+/* -----------------------------------------------------
+   99.01 Mobile
+----------------------------------------------------- */
+
+@media (max-width:768px){
+
+    .cover-content{
+
+        max-width:360px;
+
+        padding:20px;
+
+    }
+
+    .cover-title .name{
+
+        font-size:64px;
+
+    }
+
+    .cover-title .and{
+
+        font-size:28px;
+
+    }
+
+    .subtitle{
+
+        font-size:16px;
+
+        letter-spacing:4px;
+
+    }
+
+    #guestName{
+
+        font-size:20px;
+
+    }
+
+    .opening-content{
+
+        max-width:360px;
+
+        padding:30px 20px;
+
+}
+
+    .opening-title .name{
+
+        font-size:56px;
+
+    }
+
+    .opening-title .and{
+
+        font-size:28px;
+
+    }
+
+    .opening-subtitle{
+
+        font-size:16px;
+
+        letter-spacing:4px;
+
+    }
+
+    .opening-date{
+
+        font-size:18px;
+
+    }
+
+    .countdown{
+
+        gap:8px;
+
+    }
+
+    .time-box{
+
+        width:62px;
+
+        height:62px;
+
+    }
+
+    .time-box span{
+
+        font-size:18px;
+
+    }
+
+    .time-box small{
+
+        font-size:10px;
+
+    }
 
 }
