@@ -17,7 +17,7 @@
 
 ## In Progress
 
-- [ ] Bride & Groom Section
+- [x] Bride & Groom Section
 - [ ] Love Story Section
 - [ ] Wedding Event Section
 - [ ] Gallery Section

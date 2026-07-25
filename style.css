@@ -658,8 +658,8 @@ footer{
 
     background:
         linear-gradient(
-            rgba(0,0,0,.20),
-            rgba(0,0,0,.25)
+            rgba(255,255,255,.08),
+            rgba(255,255,255,.12)
         ),
         url("assets/images/couple-bg.png");
 
@@ -681,7 +681,7 @@ footer{
 
     inset:0;
 
-    background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,.04);
 
     z-index:1;
 
@@ -904,6 +904,327 @@ footer{
     color:#000000;
 
     text-decoration:none;
+
+    font-size:24px;
+
+}
+
+/* =====================================================
+   04. WEDDING EVENT
+===================================================== */
+
+/* -----------------------------------------------------
+   04.01 Event Section
+----------------------------------------------------- */
+
+#event{
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding:70px 20px 50px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.08)
+        ),
+        url("assets/images/event-bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+/* -----------------------------------------------------
+   04.02 Overlay
+----------------------------------------------------- */
+
+.event-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.02);
+
+    z-index:1;
+
+}
+
+/* -----------------------------------------------------
+   04.03 Content
+----------------------------------------------------- */
+
+.event-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:480px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+/* -----------------------------------------------------
+   04.04 Subtitle
+----------------------------------------------------- */
+
+.event-subtitle{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#000000;
+
+    margin-bottom:8px;
+
+}
+
+/* -----------------------------------------------------
+   04.05 Title
+----------------------------------------------------- */
+
+.event-title{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:38px;
+
+    font-weight:400;
+
+    color:#000000;
+
+    margin-bottom:18px;
+
+}
+
+/* -----------------------------------------------------
+   04.06 Description
+----------------------------------------------------- */
+
+.event-description{
+
+    max-width:360px;
+
+    margin:0 auto 40px;
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    line-height:1.7;
+
+    color:#000000;
+
+}
+
+/* -----------------------------------------------------
+   04.07 Event Card
+----------------------------------------------------- */
+
+.event-card{
+
+    margin-bottom:40px;
+
+}
+
+/* -----------------------------------------------------
+   04.08 Event Name
+----------------------------------------------------- */
+
+.event-name{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:#000000;
+
+    margin-bottom:20px;
+
+}
+
+/* -----------------------------------------------------
+   04.09 Icon
+----------------------------------------------------- */
+
+.event-icon{
+
+    font-size:32px;
+
+    line-height:1;
+
+    margin:10px 0 4px;
+
+}
+
+/* -----------------------------------------------------
+   04.10 Label
+----------------------------------------------------- */
+
+.event-label{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    color:#000000;
+
+    margin-bottom:2px;
+
+}
+
+/* -----------------------------------------------------
+   04.11 Value
+----------------------------------------------------- */
+
+.event-value{
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    line-height:1.5;
+
+    color:#000000;
+
+    margin-bottom:14px;
+
+}
+
+/* -----------------------------------------------------
+   04.12 Divider
+----------------------------------------------------- */
+
+.event-divider{
+
+    display:block;
+
+    width:220px;
+
+    max-width:85%;
+
+    margin:15px auto 40px;
+
+}
+
+/* -----------------------------------------------------
+   04.13 Google Maps
+----------------------------------------------------- */
+
+.event-map{
+
+    margin:40px 0 25px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+.event-map iframe{
+
+    display:block;
+
+    width:100%;
+
+    height:260px;
+
+    border:none;
+
+}
+
+/* -----------------------------------------------------
+   04.14 Maps Button
+----------------------------------------------------- */
+
+.map-button{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    border-radius:30px;
+
+    background:#8d1f24;
+
+    color:#ffffff;
+
+    font-family:'Cormorant SC', serif;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.map-button:hover{
+
+    background:#6d1519;
+
+}
+
+/* -----------------------------------------------------
+   04.15 Scroll Down
+----------------------------------------------------- */
+
+#event .scroll-down{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:46px;
+
+    height:46px;
+
+    margin-top:30px;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.10);
+
+    border:1px solid rgba(0,0,0,.20);
+
+    color:#000000;
 
     font-size:24px;
 

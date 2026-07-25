@@ -4,311 +4,531 @@
 <!-- =====================================================
      00. HEAD
     ===================================================== -->
+
 <head>
 
     <!-- 00.01 Meta Tags -->
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Naruto & Hinata Wedding Invitation</title>
 
-    <meta name="description"
-          content="Wedding Invitation Naruto Uzumaki & Hinata Hyuga">
+    <meta name="description" content="Wedding Invitation Naruto Uzumaki & Hinata Hyuga">
 
     <!-- 00.02 Google Fonts -->
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+SC:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+SC:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- 00.03 Main CSS -->
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- =====================================================
+    <!-- =====================================================
      01. BACKGROUND MUSIC
-===================================================== -->
+    ===================================================== -->
 
-<audio id="bgMusic"
-       loop>
+    <audio id="bgMusic" loop>
 
-    <source src="assets/music/cover.mp3"
-            type="audio/mpeg">
+        <source src="assets/music/cover.mp3" type="audio/mpeg">
 
-</audio>
+    </audio>
 
 
 
-<!-- =====================================================
+    <!-- =====================================================
      02. COVER
-===================================================== -->
+    ===================================================== -->
 
-<section id="cover">
+    <section id="cover">
 
-    <!-- Background -->
-    <div class="cover-image"></div>
+        <!-- Background -->
+        <div class="cover-image"></div>
 
-    <!-- Overlay -->
-    <div class="overlay"></div>
+        <!-- Overlay -->
+        <div class="overlay"></div>
 
-    <!-- Content -->
-    <div class="cover-content">
+        <!-- Content -->
+        <div class="cover-content">
 
-        <p class="subtitle">
-            THE WEDDING OF
-        </p>
+            <p class="subtitle">
+                THE WEDDING OF
+            </p>
 
-        <h1 class="cover-title">
-            <span class="name">Naruto</span>
-            <span class="and">&</span>
-            <span class="name">Hinata</span>
-        </h1>
+            <h1 class="cover-title">
+                <span class="name">Naruto</span>
+                <span class="and">&</span>
+                <span class="name">Hinata</span>
+            </h1>
 
-        <div class="guest-box">
-            <p>Kepada Yth.</p>
+            <div class="guest-box">
+                <p>Kepada Yth.</p>
 
-            <h3 id="guestName">
-                Bapak • Ibu • Saudara/i
-            </h3>
+                <h3 id="guestName">
+                    Bapak • Ibu • Saudara/i
+                </h3>
+            </div>
+
+            <button id="openInvitation">
+                💌 Buka Undangan
+            </button>
+
         </div>
 
-        <button id="openInvitation">
-            💌 Buka Undangan
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
 
-<!-- =====================================================
+    <!-- =====================================================
      03. OPENING
+    ===================================================== -->
+
+    <section id="opening">
+
+        <!-- 03.01 Overlay -->
+
+        <div class="opening-overlay"></div>
+
+        <!-- 03.02 Content -->
+
+        <div class="container opening-content">
+
+            <!-- 03.03 Moon Ornament -->
+
+            <img src="assets/images/bulan.png" class="opening-moon" alt="Moon">
+
+            <!-- 03.04 Subtitle -->
+
+            <p class="opening-subtitle">
+
+                THE WEDDING OF
+
+            </p>
+
+            <!-- 03.05 Divider -->
+
+            <div class="opening-divider"></div>
+
+            <!-- 03.06 Couple Name -->
+
+            <h2 class="opening-title">
+
+                <span class="name">Naruto</span>
+
+                <span class="and">&</span>
+
+                <span class="name">Hinata</span>
+
+            </h2>
+
+            <!-- 03.07 Description -->
+
+            <p class="opening-text">
+
+                Akan melangsungkan akad dan resepsi
+                pernikahan pada
+
+            </p>
+
+            <!-- 03.08 Wedding Date -->
+
+            <p class="opening-date">
+
+                Senin, 21 Desember 2026
+
+            </p>
+
+            <!-- 03.09 Countdown -->
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">0</span>
+
+                    <small>Hari</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="hours">0</span>
+
+                    <small>Jam</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="minutes">0</span>
+
+                    <small>Menit</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="seconds">0</span>
+
+                    <small>Detik</small>
+
+                </div>
+
+            </div>
+
+            <!-- 03.10 Scroll -->
+
+            <a href="#couple" class="scroll-down">
+
+                ↓
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     04. BRIDE & GROOM
+    ===================================================== -->
+
+    <section id="couple">
+
+        <!-- 04.01 Overlay -->
+
+        <div class="couple-overlay"></div>
+
+        <!-- 04.02 Content -->
+
+        <div class="container couple-content">
+
+            <!-- 04.03 Bismillah -->
+
+            <img src="assets/images/bismillah.png" class="bismillah" alt="Bismillah">
+
+            <!-- 04.04 Greeting -->
+
+            <p class="couple-greeting">
+
+                Assalamu'alaikum Wr. wb.
+
+            </p>
+
+            <!-- 04.05 Description -->
+
+            <p class="couple-description">
+
+                Maha Suci Allah SWT yang telah menciptakan makhluk-Nya
+                berpasang-pasangan. Ya Allah, perkenankanlah dan ridhoilah
+                pernikahan kami.
+
+            </p>
+
+            <!-- 04.06 Couple List -->
+
+            <div class="couple-list">
+
+                <!-- 04.06.01 Bride -->
+
+                <div class="person-card">
+
+                    <img src="assets/images/bride.png" class="person-photo" alt="Hinata Hyuga">
+
+                    <h3 class="person-name">
+
+                        Hinata Hyuga
+
+                    </h3>
+
+                    <p class="person-parent">
+
+                        Putri dari Bapak Hiashi Hyuga &amp; Ibu Hikari Hyuga
+
+                    </p>
+
+                </div>
+
+                <!-- 04.06.02 Flower Divider -->
+
+                <img src="assets/images/flower-divider.png" class="flower-divider" alt="Flower Divider">
+
+                <!-- 04.06.03 Groom -->
+
+                <div class="person-card">
+
+                    <img src="assets/images/groom.png" class="person-photo" alt="Naruto Uzumaki">
+
+                    <h3 class="person-name">
+
+                        Naruto Uzumaki
+
+                    </h3>
+
+                    <p class="person-parent">
+
+                        Putra dari Bapak Minato Namikaze &amp; Ibu Kushina Uzumaki
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 04.07 Scroll Down -->
+
+            <a href="#event" class="scroll-down">
+
+                ↓
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+     05. WEDDING EVENT
 ===================================================== -->
 
-<section id="opening">
+<section id="event">
 
-    <!-- 03.01 Overlay -->
+    <!-- 05.01 Overlay -->
 
-    <div class="opening-overlay"></div>
+    <div class="event-overlay"></div>
 
-    <!-- 03.02 Content -->
+    <!-- 05.02 Content -->
 
-    <div class="container opening-content">
+    <div class="container event-content">
 
-        <!-- 03.03 Moon Ornament -->
+        <!-- 05.03 Subtitle -->
 
-        <img src="assets/images/bulan.png"
-             class="opening-moon"
-             alt="Moon">
+       <h2 class="event-title">
 
-        <!-- 03.04 Subtitle -->
-
-        <p class="opening-subtitle">
-
-            THE WEDDING OF
-
-        </p>
-
-        <!-- 03.05 Divider -->
-
-        <div class="opening-divider"></div>
-
-        <!-- 03.06 Couple Name -->
-
-        <h2 class="opening-title">
-
-            <span class="name">Naruto</span>
-
-            <span class="and">&</span>
-
-            <span class="name">Hinata</span>
+            Detail Acara
 
         </h2>
 
-        <!-- 03.07 Description -->
+        <p class="event-description">
 
-        <p class="opening-text">
-
-            Akan melangsungkan akad dan resepsi
-            pernikahan pada
-
-        </p>
-
-        <!-- 03.08 Wedding Date -->
-
-        <p class="opening-date">
-
-            Senin, 21 Desember 2026
+            Dengan memohon rahmat dan ridho Allah SWT,
+            kami mengundang Bapak/Ibu/Saudara/i
+            untuk hadir pada acara pernikahan kami.
 
         </p>
 
-        <!-- 03.09 Countdown -->
+        <!-- ==========================================
+             05.06 Akad Nikah
+        ========================================== -->
 
-        <div class="countdown">
+        <div class="event-card">
 
-            <div class="time-box">
+            <!-- 05.06.01 Title -->
 
-                <span id="days">0</span>
+            <h3 class="event-name">
 
-                <small>Hari</small>
+                Akad Nikah
 
-            </div>
+            </h3>
 
-            <div class="time-box">
+            <!-- 05.06.02 Time -->
 
-                <span id="hours">0</span>
+            <div class="event-icon">
 
-                <small>Jam</small>
-
-            </div>
-
-            <div class="time-box">
-
-                <span id="minutes">0</span>
-
-                <small>Menit</small>
+                🕒
 
             </div>
 
-            <div class="time-box">
+            <p class="event-label">
 
-                <span id="seconds">0</span>
+                Pukul
 
-                <small>Detik</small>
+            </p>
+
+            <p class="event-value">
+
+                08.00 WIB
+
+            </p>
+
+            <!-- 05.06.03 Date -->
+
+            <div class="event-icon">
+
+                📅
 
             </div>
+
+            <p class="event-label">
+
+                Hari
+
+            </p>
+
+            <p class="event-value">
+
+                Senin
+                <br>
+                21 Desember 2026
+
+            </p>
+
+            <!-- 05.06.04 Location -->
+
+            <div class="event-icon">
+
+                📍
+
+            </div>
+
+            <p class="event-label">
+
+                Tempat
+
+            </p>
+
+            <p class="event-value">
+
+                Konoha Elementary School
+                <br>
+                Tamana City
+                <br>
+                Kumamoto, Japan
+
+            </p>
 
         </div>
 
-        <!-- 03.10 Scroll -->
+        <!-- 05.07 Divider -->
 
-        <a href="#couple"
-           class="scroll-down">
+        <img
+            src="assets/images/flower-divider.png"
+            class="event-divider"
+            alt="Flower Divider">
 
-            ↓
+        <!-- ==========================================
+             05.08 Resepsi
+        ========================================== -->
+
+        <div class="event-card">
+
+            <!-- 05.08.01 Title -->
+
+            <h3 class="event-name">
+
+                Resepsi
+
+            </h3>
+
+            <!-- 05.08.02 Time -->
+
+            <div class="event-icon">
+
+                🕒
+
+            </div>
+
+            <p class="event-label">
+
+                Pukul
+
+            </p>
+
+            <p class="event-value">
+
+                11.00 WIB
+                <br>
+                s/d Selesai
+
+            </p>
+
+            <!-- 05.08.03 Date -->
+
+            <div class="event-icon">
+
+                📅
+
+            </div>
+
+            <p class="event-label">
+
+                Hari
+
+            </p>
+
+            <p class="event-value">
+
+                Senin
+                <br>
+                21 Desember 2026
+
+            </p>
+
+            <!-- 05.08.04 Location -->
+
+            <div class="event-icon">
+
+                📍
+
+            </div>
+
+            <p class="event-label">
+
+                Tempat
+
+            </p>
+
+            <p class="event-value">
+
+                Konoha Elementary School
+                <br>
+                Tamana City
+                <br>
+                Kumamoto, Japan
+
+            </p>
+
+        </div>
+
+        <!-- ==========================================
+             05.09 Google Maps
+        ========================================== -->
+
+        <div class="event-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Konoha+Elementary+School&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- 05.10 Map Button -->
+
+        <a
+            href="https://www.google.com/maps/place/Konoha+Elementary+School/@32.9208677,130.6185138,17.56z/data=!4m6!3m5!1s0x3540581a3b0b54db:0x52d056db1c842b72!8m2!3d32.920908!4d130.620194!16s%2Fg%2F1226g75j?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D"
+            class="map-button"
+            target="_blank"
+            rel="noopener">
+
+            📍 Buka Google Maps
 
         </a>
 
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     04. BRIDE & GROOM
-===================================================== -->
-
-<section id="couple">
-
-    <!-- 04.01 Overlay -->
-
-    <div class="couple-overlay"></div>
-
-    <!-- 04.02 Content -->
-
-    <div class="container couple-content">
-
-        <!-- 04.03 Bismillah -->
-
-        <img
-            src="assets/images/bismillah.png"
-            class="bismillah"
-            alt="Bismillah">
-
-        <!-- 04.04 Greeting -->
-
-        <p class="couple-greeting">
-
-            Assalamu'alaikum Wr. wb.
-
-        </p>
-
-        <!-- 04.05 Description -->
-
-        <p class="couple-description">
-
-            Maha Suci Allah SWT yang telah menciptakan makhluk-Nya
-            berpasang-pasangan. Ya Allah, perkenankanlah dan ridhoilah
-            pernikahan kami.
-
-        </p>
-
-        <!-- 04.06 Couple List -->
-
-        <div class="couple-list">
-
-            <!-- 04.06.01 Bride -->
-
-            <div class="person-card">
-
-                <img
-                    src="assets/images/bride.png"
-                    class="person-photo"
-                    alt="Hinata Hyuga">
-
-                <h3 class="person-name">
-
-                    Hinata Hyuga
-
-                </h3>
-
-                <p class="person-parent">
-
-                    Putri dari Bapak Hiashi Hyuga &amp; Ibu Hikari Hyuga
-
-                </p>
-
-            </div>
-
-            <!-- 04.06.02 Flower Divider -->
-
-            <img
-                src="assets/images/flower-divider.png"
-                class="flower-divider"
-                alt="Flower Divider">
-
-            <!-- 04.06.03 Groom -->
-
-            <div class="person-card">
-
-                <img
-                    src="assets/images/groom.png"
-                    class="person-photo"
-                    alt="Naruto Uzumaki">
-
-                <h3 class="person-name">
-
-                    Naruto Uzumaki
-
-                </h3>
-
-                <p class="person-parent">
-
-                    Putra dari Bapak Minato Namikaze &amp; Ibu Kushina Uzumaki
-
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- 04.07 Scroll Down -->
+        <!-- 05.11 Scroll Down -->
 
         <a
             href="#story"
@@ -322,186 +542,164 @@
 
 </section>
 
-<!-- =====================================================
-     05. LOVE STORY
-===================================================== -->
 
-<section id="story">
+    <!-- =====================================================
+     06. LOVE STORY
+    ===================================================== -->
 
-    <!-- 05.01 Container -->
+    <section id="story">
 
-    <div class="container">
+        <!-- 06.01 Container -->
 
-        <!-- 05.02 Title -->
+        <div class="container">
 
-        <h2>
+            <!-- 06.02 Title -->
 
-            Love Story
+            <h2>
 
-        </h2>
+                Love Story
 
-    </div>
+            </h2>
 
-</section>
+        </div>
 
-
-<!-- =====================================================
-     06. WEDDING EVENT
-===================================================== -->
-
-<section id="event">
-
-    <!-- 06.01 Container -->
-
-    <div class="container">
-
-        <!-- 06.02 Title -->
-
-        <h2>
-
-            Wedding Event
-
-        </h2>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      07. GALLERY
-===================================================== -->
+    ===================================================== -->
 
-<section id="gallery">
+    <section id="gallery">
 
-    <!-- 07.01 Container -->
+        <!-- 07.01 Container -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- 07.02 Title -->
+            <!-- 07.02 Title -->
 
-        <h2>
+            <h2>
 
-            Gallery
+                Gallery
 
-        </h2>
+            </h2>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      08. COUNTDOWN
 ===================================================== -->
 
-<section id="countdown">
+    <section id="countdown">
 
-    <!-- 08.01 Container -->
+        <!-- 08.01 Container -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- 08.02 Title -->
+            <!-- 08.02 Title -->
 
-        <h2>
+            <h2>
 
-            Countdown
+                Countdown
 
-        </h2>
+            </h2>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      09. WEDDING GIFT
 ===================================================== -->
 
-<section id="gift">
+    <section id="gift">
 
-    <!-- 09.01 Container -->
+        <!-- 09.01 Container -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- 09.02 Title -->
+            <!-- 09.02 Title -->
 
-        <h2>
+            <h2>
 
-            Wedding Gift
+                Wedding Gift
 
-        </h2>
+            </h2>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      10. WISHES
 ===================================================== -->
 
-<section id="wishes">
+    <section id="wishes">
 
-    <!-- 10.01 Container -->
+        <!-- 10.01 Container -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- 10.02 Title -->
+            <!-- 10.02 Title -->
 
-        <h2>
+            <h2>
 
-            Ucapan & Doa
+                Ucapan & Doa
 
-        </h2>
+            </h2>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      11. CLOSING
 ===================================================== -->
 
-<section id="closing">
+    <section id="closing">
 
-    <!-- 11.01 Container -->
+        <!-- 11.01 Container -->
 
-    <div class="container">
+        <div class="container">
 
-        <!-- 11.02 Title -->
+            <!-- 11.02 Title -->
 
-        <h2>
+            <h2>
 
-            Terima Kasih
+                Terima Kasih
 
-        </h2>
+            </h2>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      12. FOOTER
 ===================================================== -->
 
-<footer id="footer">
+    <footer id="footer">
 
-    <!-- 12.01 Copyright -->
+        <!-- 12.01 Copyright -->
 
-    <p>
+        <p>
 
-        © 2026 Naruto & Hinata Wedding Invitation
+            © 2026 Naruto & Hinata Wedding Invitation
 
-    </p>
+        </p>
 
-</footer>
+    </footer>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      13. MAIN JAVASCRIPT
 ===================================================== -->
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
