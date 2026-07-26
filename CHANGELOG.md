@@ -4,27 +4,36 @@ Semua perubahan penting pada proyek ini akan dicatat di file ini.
 
 ## [V2.0.5] - 2026-07-26
 
-### Changed
+### Ditambahkan
 
-- Redesigned Bride & Groom section
-- Bride & Groom layout changed to single-page vertical layout
-- Added Bismillah ornament
-- Improved Bride & Groom typography
-- Changed Bride & Groom text color to black
-- Increased flower divider size
-- Reduced spacing between couple name and parents
-- Brightened Bride & Groom background
-- Fixed Bride & Groom scroll navigation to Wedding Event
+- Section Wedding Event baru
+- Section Love Story
+- Section Gallery dengan layout 1 foto utama dan 4 foto pendukung
+- Background Wedding Event (`event-bg.png`)
+- Background Love Story (`story-bg.png`)
+- Background Gallery (`gallery-bg.png`)
+- Google Maps pada Wedding Event
+- Tombol menuju Google Maps
+- Tampilan detail acara dengan ikon
+- Navigasi scroll pada Gallery
 
-- Redesigned Wedding Event section
-- Changed section title to "Detail Acara"
-- Removed "Save The Date" heading
-- Replaced event layout with icon-based information
-- Improved typography and spacing
-- Changed all event text to Cormorant SC
-- Applied black color theme for event content
-- Embedded Google Maps
-- Added "Buka Google Maps" button
+### Diubah
+
+- Tampilan Bride & Groom dibuat lebih terang
+- Overlay pada Bride & Groom diperhalus
+- Navigasi scroll Bride & Groom diarahkan ke Wedding Event
+- Tampilan Wedding Event didesain ulang
+- Warna teks Wedding Event diubah menjadi hitam
+- Typography Wedding Event disesuaikan
+- Layout Gallery disesuaikan untuk foto portrait
+- Urutan section Love Story dipindahkan sebelum Gallery
+- Section Countdown dihapus karena sudah tersedia pada Opening
+
+### Diperbaiki
+
+- Perbaikan tujuan tombol scroll pada Bride & Groom
+- Perbaikan ID section yang duplikat
+- Perbaikan path gambar Gallery
 
 
 ## [V2.0.4] - 2026-07-25
