@@ -18,10 +18,9 @@
 ## In Progress
 
 - [x] Bride & Groom Section
-- [ ] Love Story Section
-- [ ] Wedding Event Section
-- [ ] Gallery Section
-- [ ] Countdown Section
+- [x] Love Story Section
+- [x] Wedding Event Section
+- [x] Gallery Section
 - [ ] Wedding Gift Section
 - [ ] Wishes Section
 - [ ] Closing Section

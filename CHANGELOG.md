@@ -4,23 +4,27 @@ Semua perubahan penting pada proyek ini akan dicatat di file ini.
 
 ## [V2.0.5] - 2026-07-26
 
-### Added
-
-- Bride & Groom section
-- Bismillah image (`bismillah.png`)
-- Couple background (`couple-bg.png`)
-- Flower divider (`flower-divider.png`)
-- Bride profile
-- Groom profile
-- Scroll button menuju Love Story section
-
 ### Changed
 
-- Redesain total tampilan Bride & Groom
-- Mengubah layout menjadi vertikal (Bride → Divider → Groom)
-- Mengoptimalkan ukuran foto, divider, dan spacing
-- Mengubah typography menjadi warna hitam dengan font lebih tebal
-- Merapikan struktur HTML & CSS beserta penomoran komentar
+- Redesigned Bride & Groom section
+- Bride & Groom layout changed to single-page vertical layout
+- Added Bismillah ornament
+- Improved Bride & Groom typography
+- Changed Bride & Groom text color to black
+- Increased flower divider size
+- Reduced spacing between couple name and parents
+- Brightened Bride & Groom background
+- Fixed Bride & Groom scroll navigation to Wedding Event
+
+- Redesigned Wedding Event section
+- Changed section title to "Detail Acara"
+- Removed "Save The Date" heading
+- Replaced event layout with icon-based information
+- Improved typography and spacing
+- Changed all event text to Cormorant SC
+- Applied black color theme for event content
+- Embedded Google Maps
+- Added "Buka Google Maps" button
 
 
 ## [V2.0.4] - 2026-07-25
